@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.speakers__slider {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding: 1rem;
+}
+.speakers__card {
+  flex: 0 0 200px;
+  margin-right: 1rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 1rem;
+  scroll-snap-align: start;
+  cursor: pointer;
+  transition: transform 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.speakers__card:hover, .speakers__card:focus {
+  transform: scale(1.05);
+}
+.speakers__card__image {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+.speakers__name, .speakers__title {
+  text-align: center;
+}
+
+.popover {
+  display: none;
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  max-width: 400px;
+  background-color: #ffffff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+.popover.visible {
+  display: block;
+}
+.popover__content {
+  position: relative;
+  padding: 1rem;
+}
+.popover__close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.popover__title, .popover__bio {
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .speakers__slider {
+    flex-direction: column;
+  }
+  .popover {
+    width: 90%;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

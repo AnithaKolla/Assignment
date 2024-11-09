@@ -1,0 +1,35 @@
+.speakers {
+    &__slider {
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      padding: $padding;
+    }
+  
+    &__card {
+      flex: 0 0 200px;
+      margin-right: $padding;
+      background-color: $background-color;
+      border-radius: 8px;
+      padding: $padding;
+      scroll-snap-align: start;
+      cursor: pointer;
+      transition: transform 0.3s;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  
+      &:hover, &:focus {
+        transform: scale(1.05);
+      }
+  
+      &__image {
+        width: 100%;
+        height: auto;
+        border-radius: 50%;
+      }
+    }
+  
+    &__name, &__title {
+      text-align: center;
+    }
+  }
+  

@@ -1,0 +1,38 @@
+.popover {
+    display: none;
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    max-width: 400px;
+    background-color: $popover-bg-color;
+    padding: $padding;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+  
+    &.visible {
+      display: block;
+    }
+  
+    &__content {
+      position: relative;
+      padding: $padding;
+    }
+  
+    &__close {
+      position: absolute;
+      top: $padding;
+      right: $padding;
+      background: transparent;
+      border: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+  
+    &__title, &__bio {
+      margin: 0;
+    }
+  }
+  

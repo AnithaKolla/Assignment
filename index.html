@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Speaker Component</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <section class="speakers">
+    <div class="speakers__slider">
+      <article class="speakers__card" tabindex="0" aria-labelledby="speaker1">
+        <img src="https://th.bing.com/th?id=OIP.leRaZskYpTKA55a0St0tZgHaJa&w=221&h=281&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="Photo of Speaker 1" class="speakers__image">
+        <h2 id="speaker1" class="speakers__name">Speaker 1</h2>
+        <p class="speakers__title">Chief Technology Officer</p>
+      </article>
+      <article class="speakers__card" tabindex="0" aria-labelledby="speaker2">
+        <img src="https://th.bing.com/th/id/OIP.IGNf7GuQaCqz_RPq5wCkPgHaLH?w=123&h=185&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Photo of Speaker 2" class="speakers__image">
+        <h2 id="speaker2" class="speakers__name">Speaker 2</h2>
+        <p class="speakers__title">Software Engineer</p>
+      </article>
+      <article class="speakers__card" tabindex="0" aria-labelledby="speaker3">
+        <img src="https://th.bing.com/th/id/OIP.mnMdlFOgPl2jNXBDQHKCWgHaE8?w=267&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Photo of Speaker 3" class="speakers__image">
+        <h2 id="speaker3" class="speakers__name">Speaker 3</h2>
+        <p class="speakers__title">Software Developer</p>
+      </article>
+    </div>
+
+    <!-- Speaker Details Popover -->
+    <div class="popover" role="dialog" aria-labelledby="popover-heading" aria-hidden="true">
+      <div class="popover__content">
+        <button class="popover__close" aria-label="Close">&times;</button>
+        <h2 id="popover-heading" class="popover__title">Speaker Details</h2>
+        <p class="popover__bio">Detailed information about the speaker goes here.</p>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
